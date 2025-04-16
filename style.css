@@ -11,6 +11,7 @@ html {
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
     font-family: sans-serif;
+    font-size: 62.5%;
 }
 
 body,
@@ -34,6 +35,8 @@ ol[role="list"] {
 body {
     min-height: 100vh;
     line-height: 1.5;
+    margin-inline:auto;
+    
 }
 
 h1,
@@ -76,10 +79,13 @@ textarea:not([rows]) {
     min-height: 10em;
 }
 
+.container{
+    padding:0 2rem;
+}
+
 :target {
     scroll-margin-block: 5ex;
 }
-
 .content {
     background: #020024;
     background: linear-gradient(
@@ -93,6 +99,11 @@ textarea:not([rows]) {
     align-items: center;
     flex-direction: column;
     color: white;
+    width:95vw;
+    height:100vh;
+    margin-inline:auto;
+    max-width:144rem;
+    font-size:1.6rem;
 }
 
 .sizes {
@@ -104,4 +115,24 @@ textarea:not([rows]) {
     padding: 1rem 2rem;
     border-radius: 1rem;
     background-color: black;
+}
+
+
+@media screen and (max-width:1024px){
+    html{
+        font-size:56.25%;
+    }
+}
+@media (max-width:768px){
+    html{
+        font-size:50%;
+    }
+    .content{
+        max-width:60rem
+    }
+}
+@media (max-width:480px){
+    html{
+        font-size:43.75%;
+    }
 }
